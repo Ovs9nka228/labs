@@ -1,0 +1,5 @@
+a,b,c,d,e = map(int, input("Введите 5 чисел:").split())
+max_s = max(a,b,c,d,e)
+min_s = min(a,b,c,d,e)
+print("Максимальное число:",max_s)
+print("Максимальное число:",min_s)
