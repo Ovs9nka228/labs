@@ -1,3 +1,5 @@
-a=input("Введите ФИО: ")
-b=a.split(" ")
-print(b)
+a=input("Введите ФИО через пробел: ")
+b=a.split()
+print("Фамилия:", b[0].upper())
+print("Имя:", b[1].upper())
+print("Отчество:", b[2].upper())
