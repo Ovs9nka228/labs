@@ -1,8 +1,8 @@
 def make_bold(func):
-    def wrapper():
-        result = func()
-        return f"<b>{result}</b>"
+    def wrapper(*args, **kwargs):
+        return f"<b>{func(*args, **kwargs)}</b>"
     return wrapper
-def get_text():
-    return "Hello, World!"
-print(get_text())
+@make_bold
+def greet(name):
+    return f"Hello, {name}!"
+print(greet("World"))
